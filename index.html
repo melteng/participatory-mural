@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <title>Chinatown Mural</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="mural-template">
+      <img src="/img/magic-circle-t.png" alt="mural template">
+      <div class="mural-text">
+        <div id="top-ledge-real">
+          <p>cultural<br/>memory</p>
+        </div>
+        <div id="top-ledge-virtual">
+          <p>cultural<br/>amnesia</p>
+        </div>
+        <div id="wall-real"></div>
+      </div>
+    </div>
+
+    <script id="wall-template" type="text/x-handlebars-template">
+      <p class="tag-entry">
+        {{{tag-text}}}
+      </p>
+    </script>
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script type="text/javascript" src="js/vendor/handlebars.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+    <script type='text/javascript'>
+      var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1c4Sph-f_hSZsClb_k-Idd3cLWi7m4lqWl-FeUHd8scw/pubhtml';
+
+      $(document).ready( function() {
+        Tabletop.init( { key: publicSpreadsheetUrl,
+                         callback: showInfo,
+                         parseNumbers: true,
+                       simpleSheet: true } );
+      });
+
+      function showInfo(data, tabletop) {
+        console.log(data);
+        var source   = $("#wall-template").html();
+        var template = Handlebars.compile(source);
+
+        $.each(tabletop.sheets("Tags").all(), function(i, tagText) {
+          var html = template(tagText);
+          $("#wall-real").append(html);
+        });
+      }
+
+      window.addEventListener('DOMContentLoaded', init)
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
