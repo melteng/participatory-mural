@@ -1,1 +1,1 @@
-# future-game
+# participatory-mural
