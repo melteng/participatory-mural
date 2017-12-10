@@ -56,7 +56,7 @@ textarea {resize:vertical;}
    display: block;
    position: relative;
    box-sizing: border-box;
-   margin: 0;
+   margin: 77px 0 0 13px;
    width: 1440px;
    height: 100%;
    max-height: 120vh;
@@ -72,7 +72,7 @@ textarea {resize:vertical;}
    padding: 0;
    margin: 0;
    word-wrap: break-word;
-   word-break: break-all;
+   /*word-break: break-all;*/
    hyphens: auto;
  }
 
@@ -104,10 +104,10 @@ textarea {resize:vertical;}
  }
 
  #sub-ledge-real {
-   left: 621px;
-   top: 138px;
-   width: 418px;
-   transform: rotate(-35.4deg);
+   left: 615px;
+   top: 132px;
+   /*width: 418px;*/
+   transform: rotate(-35deg);
    /*text-transform: uppercase;*/
    color: #f697cd;
    text-shadow: 0 0 50px #ed7a19, 0 0 15px #ff0051, 0 0 10px #ff0051, 0 0 7px #ff00c6, 0 0 3px #ff00c6;
@@ -136,7 +136,7 @@ textarea {resize:vertical;}
    height: 134px;
    left: 383px;
    top: 112px;
-   transform: rotate(50deg) skew(-5deg);
+   transform: rotate(-40deg) skew(25deg);
  }
 
  .graf-tpf {
@@ -201,20 +201,12 @@ textarea {resize:vertical;}
    letter-spacing: 0.03em;
  }
 
- #gray-wall > *:nth-child(odd) {
-   color: #36e1dd;
- }
-
- #gray-wall > *::after {
-   content: "- ";
- }
-
  #url-link {
-   font-size: 27px; 
+   font-size: 27px;
    transform: rotate(-92deg) skew(-17deg);
    color: #fff5de;
-   top: 487px;
-   left: 495px;
+   top: 482px;
+   left: 460px;
    font-weight: 500;
    text-transform: uppercase;
    text-shadow: 0 0 50px #ed7a19, 0 0 15px #ff0051, 0 0 10px #ff0051, 0 0 7px #ff00c6, 0 0 3px #ff00c6;
@@ -231,6 +223,30 @@ textarea {resize:vertical;}
    left: 453px;
    font-weight: 500;
    text-shadow: 0 0 80px #ffaffe, 0 0 20px #d633ff, 0 0 10px #c300ff, 0 0 7px #ff00f3, 0 0 3px #ff03c7;
+ }
+
+ #pd-wall {
+   transform: skew(1.6deg, -34.2deg);
+   width: 250px;
+   height: 696px;
+   overflow: hidden;
+   display: block;
+   top: 1px;
+   left: 976px;
+   padding: 3px 8px;
+   box-sizing: border-box;
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+ }
+
+ #pd-wall > *:nth-child(odd) {
+   color: #36e1dd;
+ }
+
+ #pd-wall > *::after {
+   content: "- ";
  }
 
 /* ==========================================================================

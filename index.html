@@ -22,7 +22,7 @@
         </div>
 
         <div id="sub-ledge-real">
-          <p>History of Chinatown Gentrification</p>
+          <p>Join the History of Chinatown Gentrification</p>
         </div>
 
         <div id="orange-wall">
@@ -32,6 +32,8 @@
           <div class="graf-tpf"></div>
         </div>
 
+        <div id="pd-wall"></div>
+
         <div id="wall-video">
           <video id="t1" class="trailer" autoplay loop>
             <source src="/img/cea-trailer.mp4" type="video/mp4">
@@ -40,14 +42,16 @@
         </div>
 
         <div id="url-link" class="neon-sign">
-          <p>bit.ly/chinatown-story</p>
+          <p>→ bit.ly/chinatown-story ←</p>
         </div>
 
         <div id="for-sale" class="neon-sign">
           <p>N<br/>A<br/>K<br/>E<br/>D</p>
         </div>
 
-        <div id="gray-wall"></div>
+        <div id="gray-wall">
+          <p>Boston's Chinatown experienced the largest growth in population of any Boston neighborhood between 2000 and 2010 (44%, compared to Boston's overall 5%, Health of Boston). Of that growth, demographics counted as “White” jumped from 30% to 42% of Chinatown's residents, while those counted as “Asian” dropped from almost 70% to less than half.</p>
+        </div>
 
       </div>
     </div>
@@ -80,7 +84,7 @@
 
         $.each(tabletop.sheets("Tags").all(), function(i, tagText) {
           var html = template(tagText);
-          $("#gray-wall").append(html);
+          $("#pd-wall").append(html);
         });
       }
 
