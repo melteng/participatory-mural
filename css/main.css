@@ -20,10 +20,6 @@ textarea {resize:vertical;}
  }
 
  .mural-container {
-   /*background-image: url("/img/mural-temp.png");
-   background-repeat: no-repeat;
-   background-size: contain;
-   background-position: 0% 0%;*/
    height: 100vh;
    width: 100vw;
    margin: 0 auto;
@@ -40,7 +36,7 @@ textarea {resize:vertical;}
    left: 0;
    width: 1440px;
    box-sizing: border-box;
-   z-index: -1;
+   z-index: 10;
    opacity: 0.5;
  }
 
@@ -89,7 +85,7 @@ textarea {resize:vertical;}
    transform: rotate(-36.2deg);
    color: #d1ceff;
    font-size: 45px;
-   line-height: 0.6;
+   line-height: 0.4;
    text-shadow: 0 0 50px #009cff, 0 0 15px #367fff, 0 0 10px #3f77fe, 0 0 7px #817af3, 0 0 3px #b0abff;
  }
 
@@ -118,20 +114,50 @@ textarea {resize:vertical;}
    font-size: 24px;
    font-weight: 300;
    line-height: 1.2;
+   z-index: 5;
  }
 
  #orange-wall {
    transform: skew(2.6deg, -35.2deg);
    width: 351px;
-   height: 550px;
+   height: 696px;
    overflow: hidden;
    display: block;
-   top: 166px;
-   left: 673px;
+   top: 165px;
+   left: 676px;
+ }
+
+ .lucky-end {
+   background-image: url("/img/lucky-end.gif");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 0% 0%;
+   width: 115px;
+   height: 134px;
+   left: 383px;
+   top: 112px;
+   transform: rotate(50deg) skew(-5deg);
  }
 
  .graf-tpf {
-   
+   background-image: url("/img/tpf.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 0% 0%;
+   width: 300px;
+   height: 543px;
+   margin-top: -42px;
+ }
+
+ .somasim {
+   background-image: url("/img/somasim-highrise.gif");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: 0% 0%;
+   width: 400px;
+   height: 543px;
+   margin: 1px -50px 0;
+   opacity: 0.6;
  }
 
  #wall-video {
@@ -163,7 +189,9 @@ textarea {resize:vertical;}
    width: 688px;
    height: 190px;
    top: 611px;
-   left: 28px;
+   left: 32px;
+   padding: 3px 8px;
+   box-sizing: border-box;
    display: block;
    background-color: #000;
    text-align: right;
@@ -174,21 +202,35 @@ textarea {resize:vertical;}
  }
 
  #gray-wall > *:nth-child(odd) {
-   color: #f6d37e;
+   color: #36e1dd;
  }
 
  #gray-wall > *::after {
    content: "- ";
  }
 
- #story-link {
-   font-size: 27px;
+ #url-link {
+   font-size: 23px;
+   text-transform: uppercase;
    transform: rotate(-92deg) skew(-17deg);
    color: #f6d37e;
    top: 516px;
-   left: 524px;
+   left: 528px;
    font-weight: 300;
    text-shadow: 0 0 50px #ed7a19, 0 0 15px #ff0051, 0 0 10px #ff0051, 0 0 7px #ff00c6, 0 0 3px #ff00c6;
+ }
+
+ #for-sale {
+   font-size: 19px;
+   text-align: center;
+   line-height: 0.9;
+   text-transform: uppercase;
+   transform: skew(1deg, 16deg) scale(-1,1);
+   color: #897ef6;
+   top: 446px;
+   left: 458px;
+   font-weight: 500;
+   text-shadow: 0 0 80px #ffaffe, 0 0 20px #d633ff, 0 0 10px #c300ff, 0 0 7px #ff00f3, 0 0 3px #ff03c7;
  }
 
 /* ==========================================================================
