@@ -5,26 +5,54 @@
     <title>Chinatown Mural</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Jura:300,500" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="mural-template">
-      <img src="/img/magic-circle-t.png" alt="mural template">
-      <div class="mural-text">
+    <div class="mural-container">
+      <img class="mural-structure" src="/img/magic-circle.png" alt="mural template">
+      <!-- <img class="mural-template-photo" src="/img/placement-tests/3.jpg" alt="photo template"> -->
+      <div class="mural-content">
         <div id="top-ledge-real">
-          <p>cultural<br/>memory</p>
+          <p>我們記得歷史</p>
         </div>
         <div id="top-ledge-virtual">
-          <p>cultural<br/>amnesia</p>
+          <p>Never Again</p>
         </div>
-        <div id="wall-real"></div>
+
+        <div id="sub-ledge-real">
+          <p>History of Chinatown Gentrification</p>
+        </div>
+
+        <div id="orange-wall">
+          <video id="t2" class="trailer" autoplay loop muted>
+            <source src="/img/tennews.mp4" type="video/mp4">
+          </video>
+          <div class="graf-tpf"></div>
+        </div>
+
+        <div id="wall-video">
+          <video id="t1" class="trailer" autoplay loop muted>
+            <source src="/img/cea-trailer.mp4" type="video/mp4">
+          </video>
+          <!-- <video id="t2" class="trailer" autoplay loop>
+            <source src="/img/tennews.mp4" type="video/mp4">
+          </video> -->
+        </div>
+
+        <div id="story-link">
+          <p>bit.ly/chinatown-story</p>
+        </div>
+
+        <div id="gray-wall"></div>
+
       </div>
     </div>
 
     <script id="wall-template" type="text/x-handlebars-template">
-      <p class="tag-entry">
-        {{{tag-text}}}
-      </p>
+      <span class="tag-entry">
+        {{leave-your-tag}}
+      </span>
     </script>
 
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -49,7 +77,7 @@
 
         $.each(tabletop.sheets("Tags").all(), function(i, tagText) {
           var html = template(tagText);
-          $("#wall-real").append(html);
+          $("#gray-wall").append(html);
         });
       }
 
