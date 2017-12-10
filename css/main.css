@@ -123,7 +123,7 @@ textarea {resize:vertical;}
    height: 696px;
    overflow: hidden;
    display: block;
-   top: 165px;
+   top: 178px;
    left: 676px;
  }
 
@@ -166,7 +166,7 @@ textarea {resize:vertical;}
    height: 405px;
    overflow: hidden;
    display: block;
-   top: 356px;
+   top: 371px;
    left: 478px;
    text-align: center;
    margin: 0 auto;
@@ -185,11 +185,11 @@ textarea {resize:vertical;}
  }
 
  #gray-wall {
-   transform: skew(1.8deg, 15.2deg);
+   transform: skew(-0.2deg, 14.3deg);
    width: 688px;
    height: 190px;
-   top: 611px;
-   left: 32px;
+   top: 630px;
+   left: 38px;
    padding: 3px 8px;
    box-sizing: border-box;
    display: block;
@@ -210,25 +210,25 @@ textarea {resize:vertical;}
  }
 
  #url-link {
-   font-size: 23px;
-   text-transform: uppercase;
+   font-size: 27px; 
    transform: rotate(-92deg) skew(-17deg);
-   color: #f6d37e;
-   top: 516px;
-   left: 528px;
-   font-weight: 300;
+   color: #fff5de;
+   top: 487px;
+   left: 495px;
+   font-weight: 500;
+   text-transform: uppercase;
    text-shadow: 0 0 50px #ed7a19, 0 0 15px #ff0051, 0 0 10px #ff0051, 0 0 7px #ff00c6, 0 0 3px #ff00c6;
  }
 
  #for-sale {
-   font-size: 19px;
+   font-size: 27px;
    text-align: center;
    line-height: 0.9;
    text-transform: uppercase;
    transform: skew(1deg, 16deg) scale(-1,1);
    color: #897ef6;
-   top: 446px;
-   left: 458px;
+   top: 500px;
+   left: 453px;
    font-weight: 500;
    text-shadow: 0 0 80px #ffaffe, 0 0 20px #d633ff, 0 0 10px #c300ff, 0 0 7px #ff00f3, 0 0 3px #ff03c7;
  }
